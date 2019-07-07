@@ -272,13 +272,6 @@ button3.grid(row=5,column=0,padx=10,pady=10)
 button4=Button(tab4,text="NLTK",command=use_nltk, width=12,bg='#03A9F4',fg='#fff')
 button4.grid(row=4,column=2,padx=10,pady=10)
 
-button4=Button(tab4,text="Gensim",command=use_gensim, width=12,bg='#03A9F4',fg='#fff')
-button4.grid(row=5,column=1,padx=10,pady=10)
-
-button4=Button(tab4,text="Sumy",command=use_sumy, width=12,bg='#03A9F4',fg='#fff')
-button4.grid(row=5,column=2,padx=10,pady=10)
-
-
 variable = StringVar()
 variable.set("SpaCy")
 choice_button = OptionMenu(tab4,variable,"SpaCy","Gensim","Sumy","NLTK")
