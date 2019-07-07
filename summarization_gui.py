@@ -151,19 +151,6 @@ def use_nltk():
 	result = '\nNLTK Summary:{}\n'.format(final_text)
 	tab4_display.insert(tk.END,result)
 
-def use_gensim():
-	raw_text = str(entry1.get('1.0',tk.END))
-	final_text = summarize(raw_text)
-	print(final_text)
-	result = '\nGensim Summary:{}\n'.format(final_text)
-	tab4_display.insert(tk.END,result)
-
-def use_sumy():
-	raw_text = str(entry1.get('1.0',tk.END))
-	final_text = text_summarizer(raw_text)
-	print(final_text)
-	result = '\nSumy Summary:{}\n'.format(final_text)
-	tab4_display.insert(tk.END,result)
 
 # MAIN NLP TAB
 l1=Label(tab1,text="Enter Text To Summarize")
@@ -182,8 +169,6 @@ button2.grid(row=4,column=1,padx=10,pady=10)
 button3=Button(tab1,text="Clear Result", command=clear_display_result,width=12,bg='#03A9F4',fg='#fff')
 button3.grid(row=5,column=0,padx=10,pady=10)
 
-button4=Button(tab1,text="Main Points", width=12,bg='#03A9F4',fg='#fff')
-button4.grid(row=5,column=1,padx=10,pady=10)
 
 # Display Screen For Result
 tab1_display = Text(tab1)
